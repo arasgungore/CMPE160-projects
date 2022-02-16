@@ -18,5 +18,5 @@ Three Java projects assigned for the Introduction to Object Oriented Programming
 
 👤 **Aras Güngöre**
 
-* LinkedIn: [@arasgungore](https://www.linkedin.com/in/arasgungore/)
+* LinkedIn: [@arasgungore](https://www.linkedin.com/in/arasgungore)
 * GitHub: [@arasgungore](https://github.com/arasgungore)
