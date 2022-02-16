@@ -54,8 +54,8 @@ going to use your main class.
 There will be 2 arrays in the main method as follows:
 
 ```
-- Customer[] customers
-- Operator[] operators
+● Customer[] customers
+● Operator[] operators
 ```
 
 You are going to store the corresponding data in these arrays. All of these arrays
@@ -68,26 +68,26 @@ default. You’re going to edit these arrays whenever a new object is created.
 Customer Class must have the following fields, exactly as named below:
 
 ```
-- int ID
-- String name
-- int age
-- Operator operator
-- Bill bill
+● int ID
+● String name
+● int age
+● Operator operator
+● Bill bill
 ```
 
 Customer class must have the following methods with the exact parameters:
 
 ```
-- A constructor with five parameters: int ID, String name, int age, Operator
+● A constructor with five parameters: int ID, String name, int age, Operator
 operator, double limitingAmount
-- void talk(int minute, Customer other) for customers to talk via the operator.
+● void talk(int minute, Customer other) : for customers to talk via the operator.
 Other is the other customer, mainly the second customer.
-- void message(int quantity, Customer other) for customers to send a message,
+● void message(int quantity, Customer other) : for customers to send a message,
 amount is the number of messages to be sent. Other is the other customer,
 mainly the second customer.
-- void connection(double amount) for customers to connect to the internet.
+● void connection(double amount) : for customers to connect to the internet.
 Amount is the number of data as MB.
-- Getter and setter methods for age, operator, and bill. Ex: getAge(), setAge(int age)
+● Getter and setter methods for age, operator, and bill. Ex: getAge(), setAge(int age)
 ```
 
 
@@ -96,25 +96,25 @@ Amount is the number of data as MB.
 Operator class should have these fields with the exact names:
 
 ```
-- int ID
-- double talkingCharge
-- double messageCost
-- double networkCharge
-- int discountRate
+● int ID
+● double talkingCharge
+● double messageCost
+● double networkCharge
+● int discountRate
 ```
 
 Operator class should have the following methods with the given parameters:
 
 ```
-- A constructor with 5 parameters: ID, talkingCharge, messageCost,
+● A constructor with 5 parameters: ID, talkingCharge, messageCost,
 networkCharge, discountRate
-- double calculateTalkingCost(int minute, Customer customer) for calculating
+● double calculateTalkingCost(int minute, Customer customer) : for calculating
 the total amount to pay for talking.
-- double calculateMessageCost(int quantity, Customer customer, Customer
-other) for calculating the total amount to pay for talking.
-- double calculateNetworkCost(double amount) for calculating the total amount
+● double calculateMessageCost(int quantity, Customer customer, Customer
+other) : for calculating the total amount to pay for talking.
+● double calculateNetworkCost(double amount) : for calculating the total amount
 to pay for talking.
-- Getter and setter methods for talkingCharge, messageCost, networkCharge,
+● Getter and setter methods for talkingCharge, messageCost, networkCharge,
 discountRate.
 ```
 
@@ -124,22 +124,21 @@ discountRate.
 Bill class must have the following fields:
 
 ```
-- double limitingAmount
-- double currentDebt
+● double limitingAmount
+● double currentDebt
 ```
 
 Bill Class must have the following methods with the exact parameters:
 
 ```
-- Constructor with 1 parameter: limitingAmount. Note that you should initialize
+● Constructor with 1 parameter: limitingAmount. Note that you should initialize
 the currentDebt as zero.
-- boolean check(double amount) is for checking whether the limitingAmount is
+● boolean check(double amount) : for checking whether the limitingAmount is
 exceeded or not.
-- void add(double amount) is for adding debts to the bill.
-- void pay(double amount) is for paying the bills with the given amount.
-- void changeTheLimit(double amount) this method is for changing the limiting
-Amount.
-- Getter methods for limitingAmount and currentDebt
+● void add(double amount) : for adding debts to the bill.
+● void pay(double amount) : for paying the bills with the given amount.
+● void changeTheLimit(double amount) : for changing the limitingAmount.
+● Getter methods for limitingAmount and currentDebt
 ```
 
 
