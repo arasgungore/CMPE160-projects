@@ -96,7 +96,7 @@ should be overridden. The comparison logic of SellingOrder is given in
 “Implementation Details” in this document.
 
 
-### BuyingOrder.java
+#### BuyingOrder.java
 
 BuyingOrder.java should be a child of Order.java.
 In order to implement PriorityQueue<BuyingOrder>, the BuyingOrder
