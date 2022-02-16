@@ -3,8 +3,8 @@
 
 ## Introduction
 
-We are all living in a world that technological revolutions occur almost every
-day. One of the most important revolution was ,of course, the Communication
+We are all living in a world where technological revolutions occur almost every
+day. One of the most important revolutions was, of course, the Communication
 Systems. Today, you’re going to implement a simple version of a communication
 system.
 
@@ -19,10 +19,10 @@ out the necessary information to the output file. There will be no System.in arg
 in other words, there will not be any input given with the keyboard while the program
 runs.
 
-Note that there will be multiple classes, (Not like in CMPE150 ) Therefore, think
-a little bit about the structure before starting to implementing program.
+Note that there will be multiple classes, (Not like in CMPE150) Therefore, think
+a little bit about the structure before starting to implement the program.
 
-Field and Method names that given to you in this Document must be identical
+Field and Method names that are given to you in this Document must be identical
 in terms of names and structures in your Project. That doesn’t mean that you can not
 add extra Methods or Fields.
 
@@ -37,17 +37,17 @@ There will be 4 classes interacting with each other in this project:
 - Bill
 
 Note that, it will be better to do the necessary calculations via using corresponding
-methods in the Customer, Operator or Bill class, not in the main Class. Some parts of
-the main class are given to you(input – output oerations) but, other 3 classes are given
+methods in the Customer, Operator, or Bill class, not in the main Class. Some parts of
+the main class are given to you (input-output operations); however, the other 3 classes are given
 completely empty. You’re expected to fill these classes with the given directions.
 
 
 ### Main.java
 
-Main Class is for the general input - output operations. You are going to read an
-input file that contains directions about the simulation and do the several actions,
+Main Class is for the general input-output operations. You are going to read an
+input file that contains directions about the simulation and do several actions,
 then you will print out the desired results into the output file. These directions will be
-explained in a detailed way, later on this document. Name of the input and output files
+explained in a detailed way, later on in this document. The name of the input and output files
 will be given as arguments of the program. For the input-output test cases, we are
 going to use your main class.
 
@@ -78,14 +78,14 @@ Customer Class must have the following fields, exactly as named below:
 Customer class must have the following methods with the exact parameters:
 
 ```
-- A constructor with five parameters: int ID, String name, int age , Operator
+- A constructor with five parameters: int ID, String name, int age, Operator
 operator, double limitingAmount
 - void talk(int minute, Customer other) for customers to talk via the operator.
-Other is the another customer, mainly the second customer.
-- void message(int quantity, Customer other) for customers to send message,
-amount is the number of messages to be sent. Other is the another customer,
+Other is the other customer, mainly the second customer.
+- void message(int quantity, Customer other) for customers to send a message,
+amount is the number of messages to be sent. Other is the other customer,
 mainly the second customer.
-- void connection(double amount) for customers to connect the internet.
+- void connection(double amount) for customers to connect to the internet.
 Amount is the number of data as MB.
 - Getter and setter methods for age, operator, and bill. Ex: getAge(), setAge(int age)
 ```
@@ -113,9 +113,9 @@ the total amount to pay for talking.
 - double calculateMessageCost(int quantity, Customer customer, Customer
 other) for calculating the total amount to pay for talking.
 - double calculateNetworkCost(double amount) for calculating the total amount
-to pay for talking
+to pay for talking.
 - Getter and setter methods for talkingCharge, messageCost, networkCharge,
-discountRate
+discountRate.
 ```
 
 
@@ -145,26 +145,26 @@ Amount.
 
 ## Instructions
 
-- Most of the calculations must be in the Customer, Operator, and Bill classes and
-in their methods.
-- For the talking charge, charge must be the amount of minutes times the
-operator’s talking charge per minute. If the Customer’s age is below age 18 (
-is excluded) or higher than 65 (65 is excluded), than the operator applies a
-discount with the corresponding discount rate that given.
-- For messaging, cost must be the quantity of the messages times the operator’s
+- Most of the calculations must be in the Customer, Operator, and Bill classes
+and their methods.
+- For the talking charge, the charge must be the number of minutes times the
+operator’s talking charge per minute. If the Customer’s age is below age 18
+(18 is excluded) or higher than 65 (65 is excluded), then the operator applies a
+discount with the corresponding discount rate that is given.
+- For messaging, the cost must be the quantity of the messages times the operator’s
 message cost per message. If the 2 customers are using the same operator, then
 the operator applies a discount with the corresponding discount rate that
-operator has.
-- For internet usage, calculations are straight forward, amount of MBs * the
+the operator has.
+- For internet usage, calculations are straightforward, amount of MBs * the
 network cost per MB.
 - Before the actions, you should check the limit of the bill, if someone would
 exceed the limit after the actions, then no actions must occur.
 - We assume that every customer has enough money to pay their bill for the
 desired amount.
-- ID of the Customers, Operators, and Bills should start from 0.
+- The ID of the Customers, Operators, and Bills should start from 0.
 - You can declare extra fields or extra methods. But the given ones in this
 document must exist in your program and their parameters and names must be
-the same with the ones that given.
+the same as the ones that are given.
 
 
 
@@ -172,10 +172,10 @@ the same with the ones that given.
 
 ### Input
 
-You’re going to read the input file line by line or token by token. First 3 lines
+You’re going to read the input file line by line or token by token. The first 3 lines
 will be integers. In the first line, the number “C” represents the number of customers
-will be in this Project. The second line has the number “O” which tells you that the
-number of Operators in the Project. In the third line, the number “N” will represent
+who will be in this project. The second line has the number “O” which tells you the
+number of Operators in the project. In the third line, the number “N” will represent
 the number of events that are going to be simulated.
 
 Next N lines are going to be operations with the given rules:
@@ -184,7 +184,7 @@ Next N lines are going to be operations with the given rules:
 1 - Creating a new Customer
 2 - Creating a new Operator
 3 - A customer can talk to another customer
-4 - A customer can send message to another customer
+4 - A customer can send a message to another customer
 5 - A customer can connect to the internet
 6 - A customer can pay his/her bills.
 7 - A customer can change his/her operator
@@ -200,9 +200,9 @@ the limiting amount.
 1 <name> <age> <ID> <limitingAmount>
 ```
 
-Note that, id of the customer should be in the order of creation. To illustrate,
+Note that, the ID of the customer should be in the order of creation. To illustrate,
 first created customer must have ID 0 and the location in the array of that customer
-should be on his/her ID. Also there is no operation to create a bill object, therefore you
+should be on his/her ID. Also, there is no operation to create a bill object, therefore you
 need to create in the Customer class and store the bill object whenever you are going
 to create a customer.
 
@@ -215,22 +215,22 @@ talkingCharge, messageCost, networkCharge, int discountRate
 2 <talkingCharge> <messageCost> <networkCharge> <discountRate>
 ```
 
-Creation of an Operator object. Again, ID of the operator must be in the order
+Creation of an Operator object. Again, the ID of the operator must be in the order
 of creation.
 
 _Input 3: A customer talks to another customer_
 
-This line is followed by 3 integers that represents respectively, ID of the first
-customer, ID of the second customer, time as an integer.
+This line is followed by 3 integers that represent respectively, the ID of the first
+customer, the ID of the second customer, time as an integer.
 
 ```
 3 <1stCustomerID> <2ndCustomerID> <time>
 ```
 
-_Input 4: A customer sends message to another customer_
+_Input 4: A customer sends a message to another customer_
 
-This line is followed by 3 integers that represents respectively, ID of the first
-customer, ID of the second customer, number of messages that Customer 1 has sent.
+This line is followed by 3 integers that represent respectively, the ID of the first
+customer, the ID of the second customer, number of messages that Customer 1 has sent.
 
 ```
 4 <1stCustomerID> <2ndCustomerID> <quantity>
@@ -238,14 +238,16 @@ customer, ID of the second customer, number of messages that Customer 1 has sent
 
 _Input 5: A customer connects to the internet_
 
-This line is followed by an integer and a double, ID of the customer and amount
-of internet that the customer uses in MB.
+This line is followed by an integer and a double, the ID of the customer, and amount
+of the internet that the customer uses in MB.
 
+```
 5 <CustomerID> <amount>
+```
 
 _Input 6: A customer pays his/her bills_
 
-This line is followed by an integer and a double, ID of the customer and amount
+This line is followed by an integer and a double, ID of the customer, and the amount
 of money that the customer wants to pay for his/her bill.
 
 ```
@@ -254,7 +256,7 @@ of money that the customer wants to pay for his/her bill.
 
 _Input 7: A customer changes his/her operator_
 
-This line contains 2 integer as the CustomerID and the OperatorID.
+This line contains 2 integers as the CustomerID and the OperatorID.
 
 ```
 7 <CustomerID> <OperatorID>
@@ -262,7 +264,7 @@ This line contains 2 integer as the CustomerID and the OperatorID.
 
 _Input 8: A customer changes his/her Bill limit_
 
-This line contains 1 integer and 1 double for, the CustomerID and the new limit.
+This line contains 1 integer and 1 double for, the CustomerID, and the new limit.
 
 ```
 8 <CustomerID> <amount>
@@ -270,9 +272,9 @@ This line contains 1 integer and 1 double for, the CustomerID and the new limit.
 
 ### Output
 
-You should calculate the followings and print them out to the output file.
+You should calculate the following and print them out to the output file.
 
-1. For each operator, you should print out, amount of time that they serviced for
+1. For each operator, you should print out, the amount of time that they serviced for
 talking, number of messages sent via that operator, amount of internet usage in terms
 of MB that operator provided.
 
@@ -280,29 +282,29 @@ of MB that operator provided.
 Operator <ID of the Operator> : <talking time> <num of messages> <MBs of usage>
 ```
 
-2. For each Customer, How much Money that they spend for paying their bills
+2. For each Customer, How much money that they spend for paying their bills
 and the current debt at the end of the simulation in their bills.
 
 ```
-Customer <ID of the Customer> : <total Money spent> <current debt>
+Customer <ID of the Customer> : <total money spent> <current debt>
 ```
 
-3 - ID of the Customer that talks the most and the amount of time in terms of
-minutes. (if 2 Customers are equal, then print out the one that has smaller ID)
+3. ID of the Customer that talks the most and the amount of time in terms of
+minutes. (if 2 Customers are equal, then print out the one that has a smaller ID)
 
 ```
 <name of the Customer> : <talking time>
 ```
 
 4. ID of the Customer that sends messages the most and the number of
-messages. (if 2 Customers are equal, then print out the one that has smaller ID)
+messages. (if 2 Customers are equal, then print out the one that has a smaller ID)
 
 ```
 <name of the Customer> : <number Of Messages>
 ```
 
 5. ID of the Customer that connects the internet the most and the amount in
-terms of MBs. (if 2 Customers are equal, then print out the one that has smaller ID)
+terms of MBs. (if 2 Customers are equal, then print out the one that has a smaller ID)
 
 ```
 <name of the Customer> : <connection amount> 
