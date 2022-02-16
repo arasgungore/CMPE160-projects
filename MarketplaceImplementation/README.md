@@ -152,49 +152,49 @@ private BuyingOrder sellingOrder;
 ## Implementation Details
 
 ★ PriorityQueue functionality in the Market:
-  ○ There are two distinct PriorityQueue you have. One of them is for
-  SellingOrders, the other is for BuyingOrders.
-  ○ PriorityQueue<SellingOrder>
+    ○ There are two distinct PriorityQueue you have. One of them is for
+    SellingOrders, the other is for BuyingOrders.
+    ○ PriorityQueue<SellingOrder>
 ■ When you poll() this PQ you should get the SellingOrderthat has the
 lowest price. If two orders have the same price then you get the
 SellingOrder which has the highest amount. If it is still the same, you
 get the SellingOrder that has the lowest tradersID.
-  ○ PriorityQueue<BuyingOrder>
+    ○ PriorityQueue<BuyingOrder>
 ■ When you poll() this PQ you should get the BuyingOrderthat has the
 highest price. If two orders have the same price then you get the
 BuyingOrder which has the highest amount. If it is still the same, you
 get the BuyingOrder that has the lowest tradersID.
-  ○ At the end of each query, the market checks whether the prices at the PQs
-  are overlapping. If there is an overlap, the market should make transactions
-  with the top of PQs, until there is no overlapping.
+    ○ At the end of each query, the market checks whether the prices at the PQs
+    are overlapping. If there is an overlap, the market should make transactions
+    with the top of PQs, until there is no overlapping.
 ★ Query#666 (make open market operation):
-  ○ In this query, Trader#0 (The System) gives buying or selling orders for setting
-  the current price of PQoin to the given price.
-  ○ The final price can differ from the given price. The market tries to converge as
-  much as possible.
-  ○ You should create system’s orders until:
-    ■ price of buyingOrders.peek() < price given by the system
-    ■ price of sellingOrders.peek() > price given by the system
+    ○ In this query, Trader#0 (The System) gives buying or selling orders for setting
+    the current price of PQoin to the given price.
+    ○ The final price can differ from the given price. The market tries to converge as
+    much as possible.
+    ○ You should create system’s orders until:
+        ■ price of buyingOrders.peek() < price given by the system
+        ■ price of sellingOrders.peek() > price given by the system
 ★ Handling Orders:
-  ○ After a BuyingOrder is given, dollars reserved for this order (amount*price)
-  cannot be used again. Therefore, you should store this amount in the
-  blockedDollars of the trader's wallet.
-  ○ After a SellingOrder is given, PQoins reserved for this order (amount) cannot
-  be used again. Therefore, you should store this amount in the blockedCoins
-  of the trader's wallet.
-  ○ When making transactions the blocked currencies should disappear.
-  ○ When making transactions the amount of BuyingOrder and the amount of
-  SellingOrder are possibly different. In that case, you should divide an order
-  into two parts. One goes to the transaction, the other returns back to its
-  PriorityQueue.
-  ○ When making transactions the price of BuyingOrder and the price of Selling
-  order might differ. If so, you should take the SellingOrder’s price as the
-  Transaction price. However, if this is the case, the amount of dollars blocked
-  for the extra price should return to the wallet.
+    ○ After a BuyingOrder is given, dollars reserved for this order (amount*price)
+    cannot be used again. Therefore, you should store this amount in the
+    blockedDollars of the trader's wallet.
+    ○ After a SellingOrder is given, PQoins reserved for this order (amount) cannot
+    be used again. Therefore, you should store this amount in the blockedCoins
+    of the trader's wallet.
+    ○ When making transactions the blocked currencies should disappear.
+    ○ When making transactions the amount of BuyingOrder and the amount of
+    SellingOrder are possibly different. In that case, you should divide an order
+    into two parts. One goes to the transaction, the other returns back to its
+    PriorityQueue.
+    ○ When making transactions the price of BuyingOrder and the price of Selling
+    order might differ. If so, you should take the SellingOrder’s price as the
+    Transaction price. However, if this is the case, the amount of dollars blocked
+    for the extra price should return to the wallet.
 ★ Market Fee:
-  ○ The market fee is an integer representing how much commission the market
-  receives from the transaction per thousand.
-  ○ Conducting a transaction, Seller gets (amount*price*(1-fee/1000).
+    ○ The market fee is an integer representing how much commission the market
+    receives from the transaction per thousand.
+    ○ Conducting a transaction, Seller gets (amount*price*(1-fee/1000).
 
 
 ## Input/Output
