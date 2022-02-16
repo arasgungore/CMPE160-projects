@@ -17,7 +17,7 @@ be unloaded from a ship to port. Ships need a certain amount of fuel
 to sail from one port to another.
 
 Note that there is no user interaction during the execution, the
-program parses the input file composed of the sequential operations.
+program parses the input file composed of sequential operations.
 
 Also, as a significant remark, the signature of the methods and the
 field names that you are going to implement should be identical to the
@@ -42,7 +42,7 @@ You are already provided with the following interfaces:
 
 Do not modify the code in these files! You are responsible for all the
 compilation errors that originated from the changes made in any of
-these classes including the addition or removal of libraries.
+these classes, including the addition or removal of libraries.
 
 In addition, you are given a part of the Main class. You are required
 to complete the Main class with the instructions given later in this
@@ -160,8 +160,8 @@ It should have the following methods:
 ● A constructor with parameters ID, weight
 ● double consumption() : should return fuel consumption required by
 the container
-● boolean equals(Container other) : check type, ID and weight of a
-container. If they are the same, return true, otherwise return
+● boolean equals(Container other) : check type, ID, and weight of a
+container. If they are the same, return true; otherwise, return
 false.
 ```
 
@@ -229,25 +229,24 @@ successfully unloaded from a ship
 ### Input
 
 In the first line, there is a number N, which represents the total
-
 number of events that occur during the simulation.
 
 In the following N lines, the actions are specified in their
 customized format as described below. In other words, each distinct
 line represents an event with a specific action in the port management
 system. Please note that the test cases will not cover any erroneous
-input with regards to the format.
+input regarding the format.
 
 The possible actions are encoded through separate numbers:
 
 ```
-1.Creating a container
-2.Creating a ship
-3.Creating a port
-4.Loading a container to a ship
-5.Unloading a container from a ship
-6.Ship sails to another port
-7.Ship is refueled
+1. Creating a container
+2. Creating a ship
+3. Creating a port
+4. Loading a container to a ship
+5. Unloading a container from a ship
+6. Ship sails to another port
+7. Ship is refueled
 ```
 
 1. When creating a container, three or four inputs are given
@@ -313,7 +312,7 @@ of containers. We will provide more information about how fuel
 consumption is calculated in the following sections. In short, if
 a ship has enough fuel it will sail to the destination port.
 
-7. When fuel is added to a ship, the ID of the ship and amount of
+7. When fuel is added to a ship, the ID of the ship and the amount of
 fuel is given. The fuel amount is a _nonzero positive double_.
 
 
