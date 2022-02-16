@@ -1,7 +1,7 @@
 # Project 2: Ships and Ports
 
 
-# Description
+## Description
 
 Hi, there. Welcome to the second project where you will be learning
 the fundamentals of OOP. In this project, you are required to
@@ -32,7 +32,7 @@ penalty if done so.
 
 
 
-# Class Hierarchy and Details
+## Class Hierarchy and Details
 
 You are already provided with the following interfaces:
 ```
@@ -79,7 +79,7 @@ document):
 ```
 
 
-## Main.java
+### Main.java
 
 The main method simply reads an input file that is composed of
 sequential commands related to the operations. You can use this class
@@ -92,7 +92,7 @@ from unit tests to test your code and class structure, we will use the
 Main class to test your code for various inputs and outputs.
 
 
-## Port.java
+### Port.java
 
 Port class should have the following variables, exactly named as
 below:
@@ -121,7 +121,7 @@ protected, or public may require additional getter and setter methods.
 This applies to all other classes as well, unless specified otherwise.
 
 
-## Ship.java
+### Ship.java
 
 Ship class should have the following variables, exactly named as
 below:
@@ -145,7 +145,7 @@ list of all containers currently in the ship sorted by ID.
 ```
 
 
-## Container.java
+### Container.java
 
 Container is an abstract class and should have the following fields:
 
@@ -166,7 +166,7 @@ false.
 ```
 
 
-## BasicContainer.java and HeavyContainer.java
+### BasicContainer.java and HeavyContainer.java
 
 They should extend the Container class. They should have a constructor
 with two inputs like a Container.
@@ -179,7 +179,7 @@ Fuel consumption is as follows:
 ● HeavyContainer : 3.00 per unit of weight
 
 
-## RefrigeratedContainer.java and LiquidContainer.java
+### RefrigeratedContainer.java and LiquidContainer.java
 
 They are special types of HeavyContainer and should extend the
 HeavyContainer class. They should have a constructor with two inputs
@@ -190,9 +190,9 @@ Fuel consumption is as follows:
 ● LiquidContainer : 4.00 per unit of weight
 
 
-# Interface Details
+## Interface Details
 
-## IPort.java
+### IPort.java
 
 You are already provided with this interface. Do not modify the code
 in this file! It contains the following method:
@@ -208,7 +208,7 @@ Note that there _should not be any duplicates_ in the _current_ and _history_
 ArrayLists _(i.e. do not add the same ship to history if it has already
 visited that port before)_
 
-## IShip.java
+### IShip.java
 
 You are already provided with this interface. Do not modify the code
 in this file! It contains the following method:
@@ -260,7 +260,7 @@ Depending on the weight you need to decide the type of container:
 ● Weight <= 3000 : BasicContainer
 ● Otherwise: HeavyContainer
     
-The special type of _heavy container_ is given as **“R”** or **“L”** , which
+The special type of _heavy container_ is given as “R” or “L” , which
 stand for Refrigerated and Liquid, respectively. There may or may
 not be an “R” or “L” after weight. _It is important to note that_
 _Refrigerated and Liquid Containers are special types of_
