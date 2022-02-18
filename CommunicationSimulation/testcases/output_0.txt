@@ -1,0 +1,9 @@
+Operator 0 : 13 0 0.00
+Operator 1 : 13 10 14.40
+Operator 2 : 0 0 0.00
+Customer 0 : 2.50 1.50
+Customer 1 : 0.00 5.33
+Customer 2 : 0.00 2.63
+bbb : 13
+ccc : 7
+aaa : 14.40

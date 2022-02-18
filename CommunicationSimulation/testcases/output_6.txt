@@ -1,0 +1,13 @@
+Operator 0 : 0 20 0.00
+Operator 1 : 90 0 0.00
+Operator 2 : 0 0 0.00
+Operator 3 : 0 0 0.00
+Operator 4 : 60 14 9.19
+Customer 0 : 0.00 12.40
+Customer 1 : 0.00 0.00
+Customer 2 : 0.00 27.28
+Customer 3 : 0.00 5.20
+Customer 4 : 0.00 16.20
+b : 66
+e : 20
+c : 9.19

@@ -1,0 +1,19 @@
+Port 0: (100.00, 200.00)
+  BasicContainer: 13 14
+  HeavyContainer: 12
+  LiquidContainer: 23
+  Ship 1: 370.74
+    BasicContainer: 1 2
+    HeavyContainer: 0
+    RefrigeratedContainer: 3
+    LiquidContainer: 4
+  Ship 2: 150.54
+    BasicContainer: 5 6 7
+    HeavyContainer: 8 9
+    LiquidContainer: 10 11
+Port 1: (120.60, 250.00)
+  BasicContainer: 15 16 17 18
+  LiquidContainer: 20 21
+  Ship 0: 260.00
+    BasicContainer: 19
+    RefrigeratedContainer: 22

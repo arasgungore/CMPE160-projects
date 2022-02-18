@@ -1,0 +1,11 @@
+Operator 0 : 0 14 9.68
+Operator 1 : 0 0 32.56
+Operator 2 : 0 24 0.00
+Operator 3 : 0 0 22.66
+Customer 0 : 0.00 15.86
+Customer 1 : 0.00 4.00
+Customer 2 : 0.00 7.07
+Customer 3 : 0.00 28.12
+a : 0
+d : 38
+a : 22.66
