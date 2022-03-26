@@ -1,6 +1,6 @@
 # cmpe160-projects
 
-Three Java projects assigned for the Introduction to Object-Oriented Programming (CMPE 160) course on Spring 2021 semester. These projects apply main concepts of OOP such as encapsulation, inheritance, abstraction, and polymorphism to real-world problems.
+Three Java projects assigned for the Introduction to Object-Oriented Programming (CMPE 160) course in the Spring 2021 semester. These projects apply main concepts of OOP such as encapsulation, inheritance, abstraction, and polymorphism to real-world problems.
 
 
 
