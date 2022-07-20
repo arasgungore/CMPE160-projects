@@ -1,5 +1,8 @@
 # Project 2: Ships and Ports
 
+This project was assigned for the Introduction to Object-Oriented Programming (CMPE 160) course in the Spring 2021 semester.
+
+
 
 ## Description
 
